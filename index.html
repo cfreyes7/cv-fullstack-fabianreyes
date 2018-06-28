@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV FullStack Fabian Reyes</title>
+</head>
+<style>
+    body {
+        padding: 2em; 
+    }
+   .navigation {
+        list-style: none;
+        margin: 0;
+        background: gray;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;    
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: white;
+    }
+
+    .navigation a:hover {
+        background: darken(deepskyblue, 2%);
+    }
+
+    .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+    }  
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+
+    wrapper {
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .wrapper > * {
+        padding: 10px;
+        flex: 1 100%;
+    }
+
+    .header {
+        background: tomato;
+        text-align: center;
+    }
+
+    .footer {
+        background: gray
+    }
+
+    .main {
+        text-align: left;
+        background: deepskyblue;
+    }
+
+    .aside{
+        background: gold;
+    }
+
+    .aside-2 {
+        background: hotpink;
+    }
+
+    @media all and (min-width: 600px) {
+        .aside { flex: 1 auto; }
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: DodgerBlue;
+    }
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    #fortalezas{
+        text-align: center;
+        font-size: 18px;
+    }
+    .image{
+        text-align: center;
+        font-size: 18px;
+    }
+        
+</style>
+<body>
+    <ul class="navigation">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Proyectos</a></li>        
+        <li><a href="#">Contacto</a></li>
+    </ul>
+<div class="wrapper">
+  <header class="header">
+      <strong>Fabian Reyes FullStack Developer</strong>
+      
+  </header>
+  <div class="image">
+      <img src="img/foto.jpg" alt="Fabian Reyes FullStack Developer">
+  </div>
+  <article class="main">
+    <p>Ingeniero de Sistemas, apasionado por el desarrollo de software, investigación e implementación de sistemas responsable del estudio de los problemas y las necesidades presentes en la organización para determinar en qué medida pueden el hardware, las aplicaciones software, los archivos y bases de datos, las redes, las personas y los procedimientos actuar conjuntamente para resolver los problemas del modo más adecuado y mejorar los sistemas de la empresa y de información.</p>  
+  </article>
+  <div id="fortalezas">
+        <strong>Fortalezas</strong>
+  </div>  
+  <div class="flex-container">
+        <div>.NET</div>
+        <div>PHP</div>  
+        <div>SQL</div>
+        <div>REST</div>  
+        <div>JAVA</div>
+        <div>C#</div>    
+        <div>ETLS</div>  
+        <div>HTML</div>  
+        <div>CSS</div>  
+        <div>JS</div>  
+  </div>  
+  <footer class="footer">2018 - Fabian Reyes</footer>
+</div>
+</body>
+</html>
